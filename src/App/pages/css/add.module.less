@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Pen+Script&display=swap');
+
+/* 모든 요소에 기본 마진과 패딩을 제거하고, 박스 모델을 border-box로 설정 */
+* {
+	margin : 0;
+	padding : 0;
+	box-sizing: border-box;
+}
+
+
+.login{
+	width: 1500px;
+	height: 1200px;
+	position: absolute;
+	top: 50%;  
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.login > fieldset {
+	width: 1500px;
+	height: 1200px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	// display: flex;
+	// flex-direction:column;
+	// justify-content: space-around;
+	// align-items: center;
+}
+
+.login >fieldset> .header> h1 {
+	font-weight: 500;
+  font-style: normal;
+	font-size:100px;
+	margin-top:10px;
+}
+
+.login > fieldset > p {
+	font-size: 50px;
+}
+.header {
+	width:1500px;
+	height:400px;
+	display: flex;
+	flex-direction:column;
+	justify-content: space-around;
+	align-items: center;
+}
+.login >fieldset> .header > hr {
+	border: 0;
+	height: 3px;
+	background-color: #ccc; 
+	width: 100%;
+}
+.content{
+	// background-color: aquamarine;
+	width:1500px;
+	height:500px;
+	display: flex;
+	flex-direction:column;
+	justify-content: space-between;
+	align-items: center;
+	margin-top:50px;
+}
+
+.id {
+	width: 700px;
+	height:120px;
+	padding:10px;
+	border: solid black;
+	font-size: 60px;
+	flex-grow: 0;
+}
+.phone > button {
+	width:400px;
+	height: 120px;
+	font-size: 50px;
+	float:right;
+	background-color: #DBE7C8;
+	border-radius: 50px;
+}
+
+.password{
+	border: solid black;
+	font-size: 60px;
+	width: 1200px;
+	height:120px;
+	padding:10px;
+	flex-grow: 0;
+}
+
+
+.loginButton {
+	display :inline-block;
+	width: 1200px;
+	height:120px;
+	border-radius: 50px;
+	background-color:#DBE7C8;
+}

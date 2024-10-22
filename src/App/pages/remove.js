@@ -10,11 +10,17 @@ function Remove() {
  	const [email,setEmail] = useState("");
   const [message, setMessage] = useState('');
 
+  const [password,setPassword] = useState("");
+
 
 
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
   };
 
   const handleLogin = async (e) => {
@@ -32,16 +38,17 @@ function Remove() {
 			<form className={styles.login}>
 				<fieldset>
           <div className={styles.header}>
-            <h1>삭제하기</h1>
+            <h1>사용자 삭제하기</h1>
             <hr />
           </div>
           <div className={styles.content}>
-            <label for="id">이메일 입력 후 추가하기 버튼 눌러주세요</label>
+            <label for="id">이메일 입력 후 삭제하기 버튼 눌러주세요</label>
             {/* <div className={styles.phone}>
               <input type="text" id= "id"  className={styles.id} value={phone} onChange={handlePhoneChange} placeholder='전화번호' />
               <button>인증번호 전송</button> 
             </div> */}
             <input type="id" id="id" value = {email} className={styles.password} onChange={handleEmailChange} placeholder='이메일'/>
+            <input type="id" id="id" value = {password} className={styles.password} onChange={handlePasswordChange} placeholder='비밀번호'/>
             <div>
               <button className={styles.loginButton} type="submit">삭제하기</button>
             </div>
